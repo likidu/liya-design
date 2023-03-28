@@ -13,7 +13,7 @@ I was born and spent most of my lifetime in Shanghai, China. Now I am living in 
 
 ## Content from here
 
-Writing and rephrasing is the best way to fully understand the topics you are learning. I jot down here in this small corner about the topics I am interested in: the tangible [#embedded](/tags/embedded) things, opinionated views on [#uxdesign](/tags/uxdesign), murmurs about [#product](/tags/product), play and bricked with [#gadgets](/tags/gadgets), journey from [#brewery](/tags/brewery) and on and on...
+Writing and rephrasing is the best way to fully understand the topics you are learning. I jot down here in this small corner about the topics I am interested in: the tangible [#embedded](/tags/embedded) things, opinionated views on [#uxdesign](/tags/uxdesign), murmurs about [#product](/tags/product), play and brick a pile of [#gadgets](/tags/gadgets), journey from [#brewery](/tags/brewery) and on and on...
 
 Unless explicitly stated otherwise in the post, I would like to clarify that none of the content is sponsored, and I have no affiliation with any of the companies or manufacturers mentioned in the posts.
 
