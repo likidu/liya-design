@@ -3,12 +3,12 @@ layout: ../layouts/AboutLayout.astro
 title: "About"
 ---
 
-My professional face is on the [home page](/).
+My professional face is on the [home page](/), or on the [resume](https://liya-design-s3.s3.us-west-2.amazonaws.com/job/Resume-Liya-Du-2023-v4.pdf).
 
 I was born and spent most of my lifetime in Shanghai, China. Now I am living in Seattle area with my wife and a Devron Rex cat names "DingDing (丁丁)".
 
 <div>
-  <img src="/assets/dev.svg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <img src="/assets/dingding-nap.jpg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
 </div>
 
 ## Content from here
