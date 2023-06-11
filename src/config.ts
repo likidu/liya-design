@@ -1,4 +1,4 @@
-import type { Site, SocialObjects } from "./types"
+import type { Site, SocialObjects } from "./types";
 
 export const SITE: Site = {
   website: "https://liya.design/",
@@ -9,6 +9,8 @@ export const SITE: Site = {
   lightAndDarkMode: true,
   postPerPage: 3,
 };
+
+export const LOCALE = ["en-EN"]; // set to [] to use the environment defaul
 
 export const LOGO_IMAGE = {
   enable: true,
