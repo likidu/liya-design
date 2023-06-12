@@ -1,7 +1,7 @@
 ---
 author: Liya Du
 pubDatetime: 2024-06-11T17:42:00Z
-title: Play DirectX 12 games in macOS
+title: Play DirectX 12 games on macOS
 postSlug: directx12-games-on-macos
 featured: true
 draft: false
@@ -178,11 +178,22 @@ cp /Volumes/Game\ Porting\ Toolkit-1.0/gameportingtoolkit* /usr/local/bin
 
 终于到了安装游戏环节了。我们以 Diablo 4 为例。其他如 Steam 步骤大同小异，但可能各自有一些设置，可以和参考下面参考链接章节。
 
-从 [https://www.blizzard.com/download/](https://www.blizzard.com/download/) 下载 Battle.net 安装包，然后运行下面命令安装：
+从 [https://www.blizzard.com/download/](https://www.blizzard.com/download/) 下载 Battle.net 安装包。这边我们默认下载到了 `~/Downloads` 目录。
+
+确认 Wine 下面可以知道下载下来的 `.exe`：
+
+```bash
+ls ~/Games/battle-net/drive_c/users/crossover/Downloads/
+```
+
+然后运行下面命令安装：
 
 ```bash
 gameportingtoolkit ~/Games/battle-net ~/Games/battle-net/drive_c/users/crossover/Downloads/Battle.net-Setup.exe
 ```
+
+这时候我遇到了一个问题，显示无法找到 `gameportingtoolkit`。可以把 `Terminal.app` 直接关闭，然后重新打开，
+先进入 Rosetta 2 然后再运行一遍上面的命令。
 
 然后就是一路 Next，安装完成后，打开 Battle.net，登录你的账号，然后安装 Diablo 4。
 
