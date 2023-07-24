@@ -30,7 +30,7 @@ arm-none-eabi-readelf --debug-dump=info ./build/Standard/main_blinky.elf | grep 
 
 <Image src="/assets/20230724/dwarf5.png" format="png" alt="Dump info for DWARF 5" />
 
-The problem and solution is straightforward: [since GCC 11, it by default will built DWARF 5](https://developer.arm.com/documentation/ka004927/latest/). To force it to build DWARF 4, you need to add **`-gdwarf-4`** to your `CFLAGS` and `CXXFLAGS`:
+The problem and solution is straightforward: [since GCC 11, it by default will built DWARF 5](https://developer.arm.com/documentation/ka004927/latest/). To force it to build DWARF 4, you need to add **`-gdwarf-4`** to your `CFLAGS` and `CXXFLAGS`.
 
 Now if you check the built file again:
 
