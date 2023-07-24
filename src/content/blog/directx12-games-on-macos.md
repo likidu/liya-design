@@ -1,6 +1,6 @@
 ---
 author: Liya Du
-pubDatetime: 2024-06-11T17:42:00Z
+pubDatetime: 2023-06-11T17:42:00Z
 title: Play DirectX 12 games on macOS
 postSlug: directx12-games-on-macos
 featured: true
