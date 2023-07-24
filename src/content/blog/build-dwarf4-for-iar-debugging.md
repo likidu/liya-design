@@ -14,6 +14,8 @@ description: A quick gist about building DWARF 4 using GCC 11 and above so that 
 
 While VSCode + Arm GCC toolchain + Cortex-Debug + OpenOCD as embedded development environment is getting better everyday. And it has generally became my default choice for developing Arm based MCUs. The IAR Workbench debugging experience is still way ahead of VSCode and its extension combinations. Sometimes I have to build the `.elf` file with Arm GCC toolchain and load it within IAR Workbench.
 
+> [DWARF 5](https://dwarfstd.org/index.html) is the latest standard support by most modern compilers such as GCC.
+
 Now ever since early this year, I have bumped all my Arm GCC toolchain to latest which is version 12.1. Once I launched debugging my imported `.elf` file, I will got this error message says:
 
 ```
