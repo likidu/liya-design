@@ -45,13 +45,17 @@ const socialCount = SOCIALS.filter(social => social.active).length;
         technical program management, as down the road, my passion is about
         know, build and grow a product to help people did a better job, in works
         or daily life. My most recent journey was on Development eXperience
-        (DX), IoT and
-        <LinkButton
+        (DX), <LinkButton
           className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
           href="https://github.com/azure-rtos"
         >
-          Azure RTOS
-        </LinkButton> from Microsoft.
+          IoT / Embedded Systems
+        </LinkButton>, and now into <LinkButton
+          className="hover:text-skin-accent underline underline-offset-4 decoration-dashed"
+          href="https://www.pingcap.com"
+        >
+          distributed database
+        </LinkButton>.
       </p>
       {
         // only display if at least one social link is enabled
@@ -121,7 +125,7 @@ const socialCount = SOCIALS.filter(social => social.active).length;
 <style>
   /* ===== Hero Section ===== */
   #hero {
-    @apply pt-8 pb-6;
+    @apply pb-6 pt-8;
   }
   #hero h1 {
     @apply my-4 inline-block text-3xl font-bold sm:my-8 sm:text-5xl;
@@ -139,13 +143,13 @@ const socialCount = SOCIALS.filter(social => social.active).length;
     @apply mt-4 flex flex-col sm:flex-row sm:items-center;
   }
   .social-links {
-    @apply mr-2 mb-1 whitespace-nowrap sm:mb-0;
+    @apply mb-1 mr-2 whitespace-nowrap sm:mb-0;
   }
 
   /* ===== Featured & Recent Posts Sections ===== */
   #featured,
   #recent-posts {
-    @apply pt-12 pb-6;
+    @apply pb-6 pt-12;
   }
   #featured h2,
   #recent-posts h2 {
