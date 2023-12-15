@@ -3,7 +3,7 @@ author: Liya Du
 pubDatetime: 2023-07-24T17:42:00Z
 title: Build DWARF4 for IAR Workbench Debugging
 postSlug: build-dwarf4-for-iar-debugging
-featured: true
+featured: false
 draft: false
 tags:
   - embedded
