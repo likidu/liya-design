@@ -2,7 +2,7 @@
 author: Liya Du
 pubDatetime: 2023-12-14T21:38:00Z
 title: Enable global errors and warnings in Visual Studio Code for your entire Typescript project
-postSlug: containerized-wordpress-aws-tidb-serverless
+postSlug: vscode-global-typescript-error-view
 featured: false
 draft: false
 tags:
