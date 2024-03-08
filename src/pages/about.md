@@ -8,7 +8,7 @@ My professional face is on the [home page](/), or on the [resume](https://liya-d
 I was born and spent most of my lifetime in Shanghai, China. Now I am living in Seattle area with my wife and a Devron Rex cat names "DingDing (丁丁)".
 
 <div>
-  <img src="/assets/dingding-nap.jpg" class="sm:w-1/2 mx-auto" alt="coding dev illustration">
+  <img src="/assets/dingding-nap.jpg" class="sm:w-1/2 mx-auto" alt="Dingding is taking a nap">
 </div>
 
 ## Content from here
