@@ -1,6 +1,7 @@
 ---
 author: Liya Du
 pubDatetime: 2023-12-12T20:29:00Z
+modDatetime: 2023-12-12T20:29:00Z
 title: Build containerized Wordpress with AWS ECS and TiDB Serverless
 postSlug: containerized-wordpress-aws-tidb-serverless
 featured: true
