@@ -13,12 +13,30 @@ description: The Linux Desktop is more usable than ever in 2024.
 
 After a fail attempt to upgrade my Hackintosh to latest Sonoma, I decided to give Manjaro a try. And see my self how long I can stick with that as a daily system. The one single fact I choose Manjaro over other distros is the [AUR](https://aur.archlinux.org/packages/yay) which makes finding and installing software like a breeze.
 
+## Prepare installation USB stick
+
+Download the latest Manjaro ISO from [here](https://manjaro.org/download/). I am using the latest version of Manjaro KDE Plasma.
+
+In Windows, use [Rufus](https://rufus.ie/) to create a bootable USB stick.
+
+In macOS, just use `dd` to create a bootable USB stick.
+
+```bash
+diskutil list # find the disk number, let's say it's /dev/disk4
+
+diskutil unmountDisk /dev/disk4
+
+sudo dd if=/path/to/manjaro.iso of=/dev/disk4 bs=4M status=progress && sync
+```
+
+And that's it, you can now boot from the USB stick.
+
 ## Install essential packages
 
 First thing first, every Manjaro user must have `yay`.
 
 ```bash
-sudo pacman -S yay base-devel
+sudo pacman -Sy yay base-devel
 ```
 
 By default, when makepkg builds an AUR package, compression is enabled. After building, the package needs to be decompressed again for installation. This is unnecessary (and slow for large packages) if it's only for personal use on one's own machine. To set up package building without compression:
@@ -30,11 +48,11 @@ sudo sed -i "s/PKGEXT='.pkg.tar.xz'/PKGEXT='.pkg.tar'/g" /etc/makepkg.conf
 Install my daily applications, your mileage may vary.
 
 ```bash
-yay -S google-chrome visual-studio-code-bin 1password notion-app-electron notion-calendar-electron figma-linux feishu-bin zoom spotify thunderbird-beta-bin git-extras
+yay -S google-chrome cursor-bin 1password notion-app-electron notion-calendar-electron figma-linux feishu-bin zoom spotify thunderbird-beta-bin git-extras
 
 ```
 
-And I use [**Wrap**](https://www.warp.dev/linux-terminal) as my terminal, which was so nice they recently add support for Linux.
+And I use between [**Warp**](https://www.warp.dev/linux-terminal) and [**Ghostty**](https://github.com/Ghostty/Ghostty) as my terminal, both are great.
 
 Switch to `zsh` and install `oh-my-zsh`:
 
