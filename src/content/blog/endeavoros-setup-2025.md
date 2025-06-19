@@ -114,6 +114,8 @@ yay -S fcitx5-skin-fluentdark-git
 
 And set the theme in `Input Method > Configure addons > Classic User Interface > Theme`.
 
+There is an [extensive reading](https://manateelazycat.github.io/2023/09/11/fcitx-best-config/) about further customizations of Fcitx5 with RIME
+
 ## Development environment
 
 Install `nvm` and Node.js LTS:
