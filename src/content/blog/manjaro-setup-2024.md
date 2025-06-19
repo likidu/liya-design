@@ -1,21 +1,23 @@
 ---
 author: Liya Du
-pubDatetime: 2024-03-11T23:12:00Z
-title: My Manjaro setup in 2024
-postSlug: my-manjaro-setup-2024
+pubDatetime: 2025-06-17T23:12:00Z
+title: My EndeavorOS setup in 2025
+postSlug: my-endeavor-setup-2025
 featured: true
 draft: false
 tags:
   - linux
 ogImage: "/assets/20240310/manjaro-setup-2024.png"
-description: The Linux Desktop is more usable than ever in 2024.
+description: The Linux Desktop is more usable than ever in 2025.
 ---
 
 After a fail attempt to upgrade my Hackintosh to latest Sonoma, I decided to give Manjaro a try. And see my self how long I can stick with that as a daily system. The one single fact I choose Manjaro over other distros is the [AUR](https://aur.archlinux.org/packages/yay) which makes finding and installing software like a breeze.
 
+> EndeavorOS is now my new fav of Arch Linux distro.
+
 ## Prepare installation USB stick
 
-Download the latest Manjaro ISO from [here](https://manjaro.org/download/). I am using the latest version of Manjaro KDE Plasma.
+Grab the latest EndeavorOS ISO from [here](https://endeavouros.com/). I am using the Mercury Neo with Linux 6.13.7 which was released on early March 2025.
 
 In Windows, use [Rufus](https://rufus.ie/) to create a bootable USB stick.
 
@@ -26,14 +28,16 @@ diskutil list # find the disk number, let's say it's /dev/disk4
 
 diskutil unmountDisk /dev/disk4
 
-sudo dd if=/path/to/manjaro.iso of=/dev/disk4 bs=4M status=progress && sync
+sudo dd if=/path/to/endeavor.iso of=/dev/disk4 bs=4M status=progress && sync
 ```
 
 And that's it, you can now boot from the USB stick.
 
+During installation, we want to use `btrfs` partition which is more friendly for snapshot.
+
 ## Install essential packages
 
-First thing first, every Manjaro user must have `yay`.
+First thing first, every Arch Linux user must have `yay`.
 
 ```bash
 sudo pacman -Sy yay base-devel
@@ -45,14 +49,12 @@ By default, when makepkg builds an AUR package, compression is enabled. After bu
 sudo sed -i "s/PKGEXT='.pkg.tar.xz'/PKGEXT='.pkg.tar'/g" /etc/makepkg.conf
 ```
 
-Install my daily applications, your mileage may vary.
+Install the essential packages
 
 ```bash
-yay -S google-chrome cursor-bin 1password notion-app-electron notion-calendar-electron figma-linux feishu-bin zoom spotify thunderbird-beta-bin git-extras
+yay -S zsh vim
 
 ```
-
-And I use between [**Warp**](https://www.warp.dev/linux-terminal) and [**Ghostty**](https://github.com/Ghostty/Ghostty) as my terminal, both are great.
 
 Switch to `zsh` and install `oh-my-zsh`:
 
@@ -60,7 +62,18 @@ Switch to `zsh` and install `oh-my-zsh`:
 chsh -s /bin/zsh
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+
 ```
+
+## My daily applications
+
+Install my daily applications, your mileage may vary.
+
+```bash
+yay -S google-chrome cursor-bin warp-terminal-bin 1password notion-app-electron figma-linux feishu-bin zoom timeshift spotify git-extras
+
+```
+
 
 ## Fcitx5 with RIME
 
@@ -88,7 +101,7 @@ Add Rime as input method in `fcitx5-configtool`.
 Clone the repo to configure Rime to use WuSong Pinyin (雾凇拼音):
 
 ```bash
-git clone https://github.com/iDvel/rime-ice.git
+git clone https://github.com/iDvel/rime-ice.git --depth=1
 
 cp -r rime-ice/*  ~/.local/share/fcitx5/rime
 ```
@@ -121,9 +134,28 @@ corepack prepare --activate yarn@1 pnpm@latest
 
 ## Small tweaks
 
-- If you are using HiDPI, **Zoom** might not scale properly. You can fix it by setting `ScaleFactor=2` in `~/.config/zoomus.config`.
+- If you are using HiDPI, **Zoom** might not scale properly. You can fix it by the section below.
 - Uncheck `Settings > Power Management > Energy Savings > Dim screen` to prevent screen dimming when you are back from idle.
 - I am using a couple of Logitech devices, [Solaar](https://github.com/pwr-Solaar/Solaar) is a must-have device manager.
+
+### Zoom HiDPI fix
+
+Create a Zoom desktop shortcut with below content
+
+```txt
+[Desktop Entry]
+Name=Zoom
+Comment=Zoom Video Communications
+Exec=env QT_AUTO_SCREEN_SCALE_FACTOR=1 /usr/bin/zoom %u
+Icon=/usr/share/pixmaps/application-x-zoom.png
+Terminal=false
+Type=Application
+StartupNotify=true
+MimeType=x-scheme-handler/zoommtg;x-scheme-handler/zoomus;application/x-zoom;
+Categories=Network;AudioVideo;
+```
+
+The key is `env QT_AUTO_SCREEN_SCALE_FACTOR=1` which lets Qt auto-detect screen DPI scaling. Or the fallback `QT_SCALE_FACTOR=2` might work as well.
 
 ## Know issues
 
