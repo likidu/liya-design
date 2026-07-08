@@ -356,12 +356,10 @@ To use it together with the AWS Copilot CLI. Here are some key steps.
    - Service name: the **Service Name** you noted from the TiDB Serverless for the private endpoint connection information. And select Verify service. You should see:
 
    <Image src="/assets/20231212/service-name-check.png" format="png" alt="AWS VPC Endpoint service name" />
-
    - VPC: The VPC was created by the copilot
    - Subnets: Check the Availability Zone and select the public subnet that was created for Wordpress AWS ECS.
 
    <Image src="/assets/20231212/subnet-conf.png" format="png" alt="Subnet configuration" />
-
    - Security groups: Select the one you just created with Inbound rules as the TiDB Serverless cluster (default: 4000).
 
    Select **Create endpoint** to finish creating the endpoint.

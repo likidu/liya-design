@@ -72,7 +72,6 @@ yay -S google-chrome cursor-bin warp-terminal-bin 1password notion-app-electron 
 
 ```
 
-
 ## Fcitx5 with RIME
 
 ```bash
