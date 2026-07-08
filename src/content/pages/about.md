@@ -1,37 +1,28 @@
 ---
 title: "About"
-description: "A bit about me and this blog."
+description: "Liya Du — UX design roots, now deep in embedded systems and distributed databases. Living in Seattle with my wife and cat DingDing."
 ---
 
-AstroPaper is a minimal, accessible and SEO-friendly blog theme built with [Astro](https://astro.build/) and [Tailwind CSS](https://tailwindcss.com/).
+My professional face is on the [home page](/), or on the [resume](https://liya-design-s3.s3.us-west-2.amazonaws.com/job/Resume-Liya-Du-2023-v4.pdf).
 
-![Astro Paper](@/assets/images/astropaper-og.jpg)
+I was born and spent most of my lifetime in Shanghai, China. Now I am living in Seattle area with my wife and a Devron Rex cat names "DingDing (丁丁)".
 
-AstroPaper provides a solid foundation for blogs, or even portfolios\_ with full markdown support, built-in dark mode, and a clean layout that works out-of-the-box.
+<div>
+  <img src="/assets/dingding-nap.jpg" class="sm:w-1/2 mx-auto" alt="Dingding is taking a nap">
+</div>
 
-The blog posts in this theme also serve as guides, docs or example articles\_ making AstroPaper a flexible starting point for your next content-driven site.
+## Content from here
 
-## Features
+Writing and rephrasing is the best way to fully understand the topics you are learning. I jot down here in this small corner on the Internet about the topics I am interested in: the tangible [#embedded](/tags/embedded) things, opinionated views on [#uxdesign](/tags/uxdesign), murmurs about [#product](/tags/product), play and brick a pile of [#gadgets](/tags/gadgets), journey from [#brewery](/tags/brewery) and on and on...
 
-AstroPaper comes with a set of useful features that make content publishing easy and effective:
+Unless explicitly stated otherwise in the post, I would like to clarify that none of the content is sponsored by any of the companies or manufacturers mentioned in the posts.
 
-- SEO-friendly
-- Fast performance
-- Light & dark mode
-- Highly customizable
-- Organizable blog posts
-- Responsive & accessible
-- Static search with [PageFind](https://pagefind.app/)
-- Automatic social image generation
+And as usual, all the opinions are my own.
 
-and so much more.
+## The stack of this site
 
-## Show your support
+To keep this site minimal and easy in stacks, I use:
 
-If you like [AstroPaper](https://github.com/satnaing/astro-paper), consider giving it a star ⭐️.
-
-Found a bug 🐛 or have an improvement ✨ in mind? Feel free to open an [issue](https://github.com/satnaing/astro-paper/issues), submit a [pull request](https://github.com/satnaing/astro-paper/pulls) or start a [discussion](https://github.com/satnaing/astro-paper/discussions).
-
-If you find this theme helpful, you can also [sponsor me on GitHub](https://github.com/sponsors/satnaing) or [buy me a coffee](https://buymeacoffee.com/satnaing) to show your support — every penny counts.
-
-Kyay zuu! 🙏🏼
+- Theme from [AstroPaper](https://github.com/satnaing/astro-paper);
+- Building platform from [Vercel](https://vercel.com);
+- And hosting on [GitHub](https://github.com).

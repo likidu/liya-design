@@ -2,18 +2,18 @@ import { defineAstroPaperConfig } from "./src/types/config";
 
 export default defineAstroPaperConfig({
   site: {
-    url: "https://astro-paper.pages.dev/",
-    title: "AstroPaper",
-    description: "A minimal, responsive and SEO-friendly Astro blog theme.",
-    author: "Sat Naing",
-    profile: "https://satna.ing",
+    url: "https://liya.design/",
+    title: "Liya Design",
+    description: "I make things, sometimes break them.",
+    author: "Liya Du",
+    profile: "https://liya.design/",
     ogImage: "default-og.jpg",
     lang: "en",
-    timezone: "Asia/Bangkok",
+    timezone: "America/Los_Angeles",
     dir: "ltr",
   },
   posts: {
-    perPage: 4,
+    perPage: 10,
     perIndex: 4,
     scheduledPostMargin: 15 * 60 * 1000,
   },
@@ -23,16 +23,15 @@ export default defineAstroPaperConfig({
     showArchives: true,
     showBackButton: true,
     editPost: {
-      enabled: true,
-      url: "https://github.com/satnaing/astro-paper/edit/main/",
+      enabled: false,
     },
     search: "pagefind",
   },
   socials: [
-    { name: "github",   url: "https://github.com/satnaing/astro-paper" },
-    { name: "x",        url: "https://x.com/username" },
-    { name: "linkedin", url: "https://www.linkedin.com/in/username/" },
-    { name: "mail",     url: "mailto:yourmail@gmail.com" },
+    { name: "linkedin",  url: "https://linkedin.com/in/liydu" },
+    { name: "github",    url: "https://github.com/likidu" },
+    { name: "x",         url: "https://twitter.com/likidu" },
+    { name: "instagram", url: "https://www.instagram.com/pomelo422/" },
   ],
   shareLinks: [
     { name: "whatsapp", url: "https://wa.me/?text=" },
