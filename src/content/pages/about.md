@@ -3,7 +3,7 @@ title: "About"
 description: "Liya Du — UX design roots, now deep in embedded systems and distributed databases. Living in Seattle with my wife and cat DingDing."
 ---
 
-My professional face is on the [home page](/), or on the [resume](https://liya-design-s3.s3.us-west-2.amazonaws.com/job/Resume-Liya-Du-2023-v4.pdf).
+My professional face is on the [home page](/), or on the [resume](/resume).
 
 I was born and spent most of my lifetime in Shanghai, China. Now I am living in Seattle area with my wife and a Devron Rex cat names "DingDing (丁丁)".
 
